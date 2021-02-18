@@ -1,0 +1,10 @@
+header {
+    min-height: 8vh;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    color: #f4f6f8;
+    /* background-image: linear-gradient(#daf5ff, transparent, transparent); */
+    background-color: #8d8c8c;
+    border-bottom: 1px solid #daf5ff;
+  }

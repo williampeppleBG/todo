@@ -1,0 +1,57 @@
+html, body {
+  height: 100% !important;
+  margin: 0;
+}
+.form-control, .col-form-label, .custom-select, label, header, footer {
+  font-size: 0.8rem !important;
+}
+.button {
+  padding: .6rem 2rem;
+  line-height: 1.5;
+  border-radius: .4rem;
+  color: #fff;
+  background-color: #1b8bec;
+  border-color: #6c757d;
+  text-decoration: none;
+  border: 1px solid rgb(24, 24, 80);
+  justify-content: space-around;
+  margin: 10px;
+    
+}
+.pagecenter {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: #ecf1f5;
+  width: 450px;
+  height: 300px;
+  justify-content: center !important;
+  align-items: center !important;
+  border-radius: 5%;
+}
+
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: flex;
+  text-align: center;
+  justify-content:center;
+  margin: 5px;
+  width: 100%;
+  color: #1b8bec;
+}
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+}
+.col-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around !important;
+  margin: 20px !important;
+}
