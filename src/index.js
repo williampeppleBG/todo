@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import HomePage from './Homepage/HomePage';
 import ForgotPassword from './Homepage/ForgotPassword/ForgotPassword';
 import TodoPage from './TodoPage/TodoPage';
-import "bootstrap/dist/css/bootstrap.min.css";
-
 
 ReactDOM.render(
   <Router>
