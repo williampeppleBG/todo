@@ -67,6 +67,26 @@ form {
   margin: 20px !important;
 }
 
+.background1 {
+  background: url(../../Assets/Todo_list.svg);
+  width: 40%;
+  position: absolute;
+  left: 0;
+  margin-left: -80px;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+.background2 {
+  background: white;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+
 @media (min-width: 300px) and (max-width: 599px) {
   .pagecenter {
     width: 90%;
