@@ -89,7 +89,7 @@ const Login = () => {
 
         <div className="col-button">
           <div className="mr-6">
-            <button type="submit" className="button">
+            <button type="submit" className="button" onClick={loginForm}>
               Login
             </button>
           </div>
