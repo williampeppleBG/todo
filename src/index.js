@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import HomePage from './HomePage/HomePage';
-import ForgotPassword from './HomePage/ForgotPassword/ForgotPassword';
+import HomePage from './Homepage/HomePage';
+import ForgotPassword from './Homepage/ForgotPassword/ForgotPassword';
 import TodoPage from './TodoPage/TodoPage';
 
 ReactDOM.render(
