@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
-import Homepage from "./Homepage/Homepage"
-import "bootstrap/dist/css/bootstrap.min.css";
 
+import HomePage from './HomePage/HomePage';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <div className="App">
-       <Homepage /> 
+      <HomePage />
     </div>
   );
 }

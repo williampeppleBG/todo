@@ -1,4 +1,4 @@
-header {
+h1 {
   min-height: 8vh;
   display: flex !important;
   align-items: center;
@@ -6,6 +6,5 @@ header {
   text-align: center;
   padding: 0.2rem;
   color: white;
-  /* background-image: linear-gradient(#daf5ff, transparent, transparent); */
   background-color: #79b988;
 }

@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Header.css';
 
-export class Header extends Component {
-  render() {
-    return (
-      <header>
-        <h1>Todo App</h1>
-      </header>
-    );
+const Header = (props) => {
+  if (!props.name) {
+    return <h1>Todo App</h1>;
+  } else {
+    return <h1>Welcome {props.name}</h1>;
   }
-}
+};
 
 export default Header;

@@ -2,17 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Homepage from "./Homepage/Homepage"
-import ForgotPassword from "./Homepage/ForgotPassword/ForgotPassword"
+import HomePage from './HomePage/HomePage';
+import ForgotPassword from './HomePage/ForgotPassword/ForgotPassword';
+import TodoPage from './TodoPage/TodoPage';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 
 ReactDOM.render(
   <Router>
     <Switch>
-      <Route exact path="/" component={Homepage} />
-      <Route path="/forgotpassword" component={ForgotPassword} />
+      <Route exact path="/">
+        <HomePage />
+      </Route>
+      <Route path="/forgotpassword">
+        <ForgotPassword />
+      </Route>
+      <Route path="/todopage">
+        <TodoPage />
+      </Route>
     </Switch>
   </Router>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
-
