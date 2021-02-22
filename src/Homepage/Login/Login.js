@@ -17,7 +17,7 @@ const Login = () => {
       },
     };
     const todoURL =
-      'http://todo-bg.herokuapp.com/index.php/api/users/syncDown?last_sync_time=2021-02-18 12:32:11';
+      'https://todo-bg.herokuapp.com/index.php/api/users/syncDown?last_sync_time=2021-02-18 12:32:11';
 
     function getData(url = '') {
       return fetch(url, requestData);
@@ -89,7 +89,7 @@ const Login = () => {
 
         <div className="col-button">
           <div className="mr-6">
-            <button type="submit" className="button" onClick={loginForm}>
+            <button type="submit" className="button">
               Login
             </button>
           </div>
