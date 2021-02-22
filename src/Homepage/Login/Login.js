@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 class Login extends Component {
   constructor(props) {
@@ -9,7 +11,10 @@ class Login extends Component {
   }
 
   render() {
-    return (
+    return (<div className="row">
+        <div className="background1"></div>
+        <div className="background2"></div>
+
       <div className="pagecenter loginForm">
         <form>
           <div className="mb-3">
@@ -57,6 +62,7 @@ class Login extends Component {
             </div>
           </div>
         </form>
+      </div>
       </div>
     );
   }

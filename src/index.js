@@ -4,6 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Homepage from "./Homepage/Homepage"
 import ForgotPassword from "./Homepage/ForgotPassword/ForgotPassword"
+import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <Router>
