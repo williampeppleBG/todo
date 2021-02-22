@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+
 
 const Login = () => {
   const [email, updateEmail] = useState('');
@@ -8,7 +10,6 @@ const Login = () => {
   const [users, updateUsers] = useState([]);
   let user1 = '',
     history = useHistory();
-
   useEffect(() => {
     const requestData = {
       method: 'GET',
@@ -29,8 +30,8 @@ const Login = () => {
         updateUsers(usersAPI.users);
       });
   }, []);
-
-  console.log(users.length);
+  
+ console.log(users.length);
 
   const loginForm = (e) => {
     e.preventDefault();
@@ -106,5 +107,5 @@ const Login = () => {
     </div>
   );
 };
-
+  
 export default Login;
