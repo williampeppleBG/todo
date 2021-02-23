@@ -6,9 +6,6 @@ const ForgotPassword = () => {
   const [forgotEmail, updateForgotEmail] = useState('');
   const forgotForm = (e) => {
     e.preventDefault();
-    if (forgotEmail === '') {
-      alert('Kindly fill your email address');
-    }
   };
   return (
     <div className="pagecenter loginForm">
@@ -24,6 +21,7 @@ const ForgotPassword = () => {
           placeholder="Email"
           value={forgotEmail}
           onChange={(e) => updateForgotEmail(e.target.value)}
+          required
         />
         <div className="btn-container mt-3">
           <button type="submit" className="button btn-forgot">

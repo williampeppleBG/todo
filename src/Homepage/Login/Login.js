@@ -34,20 +34,13 @@ const Login = () => {
   const loginForm = (e) => {
     e.preventDefault();
     let boolean = false;
-    if (email === '' && password === '') {
-      alert('Kindly fill in your login details');
-    } else if (email === '') {
-      alert('Kindly fill in your email address');
-    } else if (password === '') {
-      alert('Kindly fill in your password');
-    } else {
-      users.forEach((user) => {
-        if (user.email === email && user.password === password) {
-          boolean = true;
-          user1 = user;
-        }
-      });
-    }
+    users.forEach((user) => {
+      if (user.email === email && user.password === password) {
+        boolean = true;
+        user1 = user;
+      }
+    });
+
     if (boolean) {
       console.log('You have been successfully logged in');
       history.push({
@@ -65,11 +58,12 @@ const Login = () => {
           </label>
           <input
             type="text"
-            name="username"
+            name="useremail"
             className="form-control credentials"
-            id="username"
+            id="useremail"
             placeholder="xyz@example.com"
             onChange={(e) => updateEmail(e.target.value)}
+            required
           />
         </div>
         <div className="">
@@ -84,6 +78,7 @@ const Login = () => {
             id="password"
             placeholder="234****"
             onChange={(e) => updatePassword(e.target.value)}
+            required
           />
         </div>
 
