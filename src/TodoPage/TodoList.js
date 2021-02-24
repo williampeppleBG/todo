@@ -1,14 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
+import Index from "./Todo/Index"
+// import "./Todolist.css"
 
 const TodoList = () => {
   const location = useLocation();
   return (
-    <div className="d-flex flex-column align-items-center mt-3">
+    <div className="d-flex flex-column align-items-center">
       <h2>{location.data.first_name}'s Todos</h2>
-      <p>In Progress</p>
-      <p>Done</p>
-      <p>Paused</p>
+       <Index />
     </div>
   );
 };

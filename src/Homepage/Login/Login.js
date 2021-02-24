@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
-import "bootstrap/dist/css/bootstrap.min.css";
+
 
 
 const Login = () => {
@@ -32,6 +32,7 @@ const Login = () => {
   }, []);
   
  console.log(users.length);
+ console.log(users);
 
   const loginForm = (e) => {
     e.preventDefault();

@@ -1,12 +1,11 @@
 import React from 'react';
 import './App.css';
-import HomePage from './HomePage/HomePage';
-
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      <HomePage />
+    <div className='todo-app'>
+      <TodoList />
     </div>
   );
 }
