@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import './Login.css';
 
-
-
 const Login = () => {
   const [email, updateEmail] = useState('');
   const [password, updatePassword] = useState('');
@@ -19,7 +17,7 @@ const Login = () => {
       },
     };
     const todoURL =
-      'http://todo-bg.herokuapp.com/index.php/api/users/syncDown?last_sync_time=2021-02-18 12:32:11';
+      'https://todo-bg.herokuapp.com/index.php/api/users/syncDown?last_sync_time=2021-02-18 12:32:11';
 
     function getData(url = '') {
       return fetch(url, requestData);
@@ -30,27 +28,19 @@ const Login = () => {
         updateUsers(usersAPI.users);
       });
   }, []);
-  
- console.log(users.length);
- console.log(users);
+
+  console.log(users.length);
 
   const loginForm = (e) => {
     e.preventDefault();
     let boolean = false;
-    if (email === '' && password === '') {
-      alert('Kindly fill in your login details');
-    } else if (email === '') {
-      alert('Kindly fill in your email address');
-    } else if (password === '') {
-      alert('Kindly fill in your password');
-    } else {
-      users.forEach((user) => {
-        if (user.email === email && user.password === password) {
-          boolean = true;
-          user1 = user;
-        }
-      });
-    }
+    users.forEach((user) => {
+      if (user.email === email && user.password === password) {
+        boolean = true;
+        user1 = user;
+      }
+    });
+
     if (boolean) {
       console.log('You have been successfully logged in');
       history.push({
@@ -68,11 +58,12 @@ const Login = () => {
           </label>
           <input
             type="text"
-            name="username"
+            name="useremail"
             className="form-control credentials"
-            id="username"
+            id="useremail"
             placeholder="xyz@example.com"
             onChange={(e) => updateEmail(e.target.value)}
+            required
           />
         </div>
         <div className="">
@@ -87,6 +78,7 @@ const Login = () => {
             id="password"
             placeholder="234****"
             onChange={(e) => updatePassword(e.target.value)}
+            required
           />
         </div>
 
@@ -108,5 +100,5 @@ const Login = () => {
     </div>
   );
 };
-  
+
 export default Login;
